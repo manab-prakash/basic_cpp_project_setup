@@ -8,8 +8,8 @@ out/
 
 #####Remove every thing of ccls language server cache
 .ccls-cache/*
-googletest/*
 build/*  
+googletest/*
 !build/CMakeCache.txt
 #every thing on build, ccls cache and google test  
 #chache has a setting about static library which need to be modified
