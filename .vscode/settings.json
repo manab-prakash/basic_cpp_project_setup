@@ -1,0 +1,87 @@
+{
+    "files.associations": {
+        "iostream": "cpp",
+        "vector": "cpp",
+        "array": "cpp",
+        "atomic": "cpp",
+        "*.tcc": "cpp",
+        "cctype": "cpp",
+        "clocale": "cpp",
+        "cmath": "cpp",
+        "cstdarg": "cpp",
+        "cstddef": "cpp",
+        "cstdint": "cpp",
+        "cstdio": "cpp",
+        "cstdlib": "cpp",
+        "cwchar": "cpp",
+        "cwctype": "cpp",
+        "deque": "cpp",
+        "unordered_map": "cpp",
+        "exception": "cpp",
+        "algorithm": "cpp",
+        "memory": "cpp",
+        "memory_resource": "cpp",
+        "optional": "cpp",
+        "string": "cpp",
+        "string_view": "cpp",
+        "system_error": "cpp",
+        "tuple": "cpp",
+        "type_traits": "cpp",
+        "utility": "cpp",
+        "fstream": "cpp",
+        "initializer_list": "cpp",
+        "iosfwd": "cpp",
+        "istream": "cpp",
+        "limits": "cpp",
+        "new": "cpp",
+        "ostream": "cpp",
+        "sstream": "cpp",
+        "stdexcept": "cpp",
+        "streambuf": "cpp",
+        "typeinfo": "cpp"
+    },
+    "cmake.sourceDirectory": "${workspaceFolder}/.",
+    "cSpell.words": [
+        "CMAKE",
+        "Cppfiles",
+        "LLVM",
+        "googletest"
+    ],
+    "cpplint.cpplintPath": "/home/key/.local/bin/cpplint",
+    "cpplint.filters": [
+        "-whitespace/indent",
+        "-legal/copyright",
+        "-runtime/references"
+    ],
+    "editor.renderWhitespace": "none",
+    "editor.fontSize": 15,
+    "editor.tokenColorCustomizations": {
+        "functions": "#f346b1f8",
+        "keywords": {
+            "fontStyle": "bold",
+        }
+    },
+    "editor.semanticTokenColorCustomizations": {
+        "enabled": true, // enable for all themes
+        "rules": {
+            "*.static": {
+                "foreground": "#ff0000",
+                "fontStyle": "bold"
+            },
+            "type": {
+                "foreground": "#00aa00",
+                "fontStyle": "bold" //gets T bold ang green 
+            },
+            "namespace": {
+                "fontStyle": "" //removes line underneath std
+            },
+            "parameter": "#ffae00", //sets the parameter passed into function
+            "newOperator": { //Make sure new and delete pop out loud red
+                "foreground": "#ff0000",
+                "fontStyle": "bold underline"
+            },
+            "member": "#ff00ea"
+        }
+    },
+    "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools"
+}
