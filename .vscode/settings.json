@@ -56,10 +56,19 @@
     "editor.renderWhitespace": "none",
     "editor.fontSize": 15,
     "editor.tokenColorCustomizations": {
-        "functions": "#f346b1f8",
+        "functions": "#df49a5f8",
         "keywords": {
-            "fontStyle": "bold",
-        }
+            "fontStyle": "bold"
+        },
+        "textMateRules": [
+            {
+                "scope": "keyword.operator",
+                "settings": {
+                    "foreground": "#746dd4"
+                }
+            }
+            //,{ //add another textmate rule here}
+        ]
     },
     "editor.semanticTokenColorCustomizations": {
         "enabled": true, // enable for all themes
@@ -75,12 +84,13 @@
             "namespace": {
                 "fontStyle": "" //removes line underneath std
             },
-            "parameter": "#ffae00", //sets the parameter passed into function
+            "parameter": "#af5500", //sets the parameter passed into function
             "newOperator": { //Make sure new and delete pop out loud red
                 "foreground": "#ff0000",
                 "fontStyle": "bold underline"
             },
-            "member": "#ff00ea"
+            "member": "#ff00ea", //class member function
+            "property": "#609400" //class attribute
         }
     },
     "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools"
